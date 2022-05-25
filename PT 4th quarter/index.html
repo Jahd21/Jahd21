@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+			   font-family: Bookman Old Style;
+			   text-shadow: 1px 1px white;
+			   background-color:black;
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container div:hover {
+   background-color: white; 
+}
+ 
+.flex-item {
+  text-align: center;
+  border: 2px solid rgba(1, 1, 1, 1);
+  background-color: black;
+  width: auto ;
+  margin: 40px;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 6px;
+  opacity: 8;
+}
+.container {
+  padding: 10px;
+  display: grid;
+  width: 2050px;
+  height:620px;
+  grid-template-columns: 1fr 1fr 174px;
+  grid-template-rows: 50px 585px; 
+  grid-template-areas:
+      "Header Header"
+      "introduction introduction ";
+     
+}
+.header {
+  border: 2px solid rgba(1, 1, 1, 1);
+  padding: 20px;
+  text-align: center;
+  grid-area: Header;
+  background-color: green;
+  font-size: 20px;
+}
+
+.introduction {
+  opacity: 5;
+  border: 2px solid rgba(1, 1, 1, 1);
+  grid-area: introduction;	
+  background-color: greem;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  width: 700px;
+  height: 3000px;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 400 600px;
+  grid-template-areas:
+      "Header"
+      "introduction"
+	  "flex container"
+	  }
+
+
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header">my Favorites in life</div>
+	<div class="introduction">
+	<ul>
+	    <li>My name is Jahd Santillan,from punta princesa cebu city. </li>
+		<li>I am turning 16 this coming july 21 2006</li>
+		
+	</ul>
+	</div>
+ </div>
+ <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Main Page</a></div>
+   <div class="flex-item"> <a href="bikes.html">My Favorite bikes</a></div>  
+   <div class="flex-item"> <a href="celebrities.html">My Favorite celebrities</a></div>
+   <div class="flex-item"><a href="mouse.html">My Favorite mouse</a></div>
+   <div class="flex-item"><a href="cars.html">My Favorite cars</a></div>
+</div>
+</body>
+</html>
